@@ -1,0 +1,37 @@
+
+Ecommerce
+
+	1. ItemCategory(Parent Table) 
+	2. Items/Products(Child Table)
+	3. city
+	4. area
+	5. Vendors
+	6. Users
+	7. Sizes
+	8. NewsLetter
+	9. Cart
+	10. Stock
+	11.	Types of Products (i.e. Popular Gifts in Baby,Amazon Top Sellers etc)
+	
+	1. ItemCategory:
+		
+		(
+			id int auto_increament,
+			CategoryName string (varchar(100))
+			createdat datetime/timestamp
+			createdby string (varchar(100))
+			updatedat datetime/timestamp
+			updatedby string/varchar(100)
+			
+		)
+	
+	2. Items
+		(
+			id int auto_increament,
+			itemname string (varchar(200))
+			rate double/float
+			categoryid int => foreign key => ItemCategory			
+			
+		)
+		
+		
